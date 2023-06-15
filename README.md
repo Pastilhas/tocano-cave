@@ -1,11 +1,4 @@
-# fresh project
+# Tocano Cave - https://jcampos.deno.dev/
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://fresh.deno.dev)
 
-### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+My personal website. Made with Fresh.
