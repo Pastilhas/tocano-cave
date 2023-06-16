@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
-import { Text } from "../components/Text.tsx";
+import { TextBox } from "../components/TextBox.tsx";
 
 class Gallery {
   games: string[] = [];
@@ -38,7 +38,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
       <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
         <h1 class="text-uppercase font-bold mb-2">Games</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
-        <Text class="mb-5">
+        <TextBox class="mb-5">
           <p>
             In my free time, I like to play videogames. Nowadays, I mostly play
             roguelike games: One More Gate, Slay the Spire, and Tainted Grail. I
@@ -51,7 +51,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
             primarily MMO games like: Puzzle Pirates, Dofus, DragonFable,
             AdventureQuest Worlds, and MechQuest.
           </p>
-        </Text>
+        </TextBox>
         <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
           {data?.games?.map((s) => {
             return (

@@ -3,7 +3,7 @@ import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-gi
 import BrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
 import ArrowDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
 import { Header } from "../components/Header.tsx";
-import { Text } from "../components/Text.tsx";
+import { TextBox } from "../components/TextBox.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Box } from "../components/Box.tsx";
 import { Tag, TagList } from "../components/Tag.tsx";
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <div>
           <h1 class="text-uppercase font-bold mb-2">Software Developer</h1>
-          <Text class="mt-2">
+          <TextBox class="mt-2">
             <p>
               Hello, I am João Campos. I have studied Informatics Engineering
               and am currently working as a Software Developer. I have already
@@ -51,7 +51,7 @@ export default function Home() {
               as a developer to enhance my knowledge in the area and widen my
               range of skills.
             </p>
-          </Text>
+          </TextBox>
         </div>
       </Box>
       <Box>
@@ -66,7 +66,7 @@ export default function Home() {
               <h2 class="font-bold">09.2021 – Now</h2>
             </div>
           </summary>
-          <Text class="mt-5">
+          <TextBox class="mt-5">
             <p>
               I began my journey at INEGI during the development of my Master's
               thesis. The thesis involved the evaluation of the impact of the
@@ -88,7 +88,7 @@ export default function Home() {
               VM's may be used to execute machine learning projects in a
               centralized machine.
             </p>
-          </Text>
+          </TextBox>
           <TagList>
             <Tag>Augmented Reality</Tag>
             <Tag>Machine Learning</Tag>
@@ -108,7 +108,7 @@ export default function Home() {
               <h2 class="font-bold">03.2022 – 09.2022</h2>
             </div>
           </summary>
-          <Text class="mt-5">
+          <TextBox class="mt-5">
             <p>
               After my Erasmus experience, I was invited by a colleague to join
               a German startup, BizTapp, to help them develop an innovative web
@@ -127,7 +127,7 @@ export default function Home() {
               coworkers from different countries, I improved my ability to work
               in a team in a multicultural environment.
             </p>
-          </Text>
+          </TextBox>
           <TagList>
             <Tag>Web Dev</Tag>
             <Tag>React</Tag>
@@ -145,7 +145,7 @@ export default function Home() {
               <h2 class="font-bold">07.2019 – 08.2019</h2>
             </div>
           </summary>
-          <Text class="mt-5">
+          <TextBox class="mt-5">
             <p>
               In my 2nd year of studies, I took part in an internship at Mindera
               Gaming, a Portuguese company which develops betting games. I
@@ -158,7 +158,7 @@ export default function Home() {
               royale. After much brainstorm, we reached a final idea and
               developed it in Unity.
             </p>
-          </Text>
+          </TextBox>
           <TagList>
             <Tag>Game Dev</Tag>
             <Tag>Multiplayer</Tag>
