@@ -52,7 +52,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
             AdventureQuest Worlds, and MechQuest.
           </p>
         </Text>
-        <div class="grid lg:grid-cols-5 lg:gap-2 grid-cols-3 gap-1">
+        <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
           {data?.games?.map((s) => {
             return (
               <img
@@ -67,7 +67,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
       <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
         <h1 class="text-uppercase font-bold mb-2">Shows</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
-        <div class="grid lg:grid-cols-5 lg:gap-2 grid-cols-3 gap-1">
+        <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
           {data?.shows?.map((s) => {
             return (
               <img

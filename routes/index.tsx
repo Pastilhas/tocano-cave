@@ -6,6 +6,7 @@ import { Header } from "../components/Header.tsx";
 import { Text } from "../components/Text.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Box } from "../components/Box.tsx";
+import { Tag } from "../components/Tag.tsx";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <div class="mr-10">
           <img
             src="/images/toucan.png"
-            class="w-32 h-32 m-0 p-0 rounded-full"
+            class="w-32 h-32 rounded-full"
             alt="tocano logo"
           />
           <h1 class="py-5 w-32 text-center text-uppercase font-bold">
@@ -89,24 +90,12 @@ export default function Home() {
             </p>
           </Text>
           <div class="flex my-3 text-xs">
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Augmented Reality
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Machine Learning
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Web Dev
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Unity
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Python
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Flask
-            </h2>
+            <Tag>Augmented Reality</Tag>
+            <Tag>Machine Learning</Tag>
+            <Tag>Web Dev</Tag>
+            <Tag>Unity</Tag>
+            <Tag>Python</Tag>
+            <Tag>Flask</Tag>
           </div>
         </details>
         <hr class="h-0.5 my-3 bg-gray-300" />
@@ -140,18 +129,10 @@ export default function Home() {
             </p>
           </Text>
           <div class="flex my-3 text-xs">
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Web Dev
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              React
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Node.js
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              ElasticSearch
-            </h2>
+            <Tag>Web Dev</Tag>
+            <Tag>React</Tag>
+            <Tag>Node.js</Tag>
+            <Tag>ElasticSearch</Tag>
           </div>
         </details>
         <hr class="h-0.5 my-3 bg-gray-300" />
@@ -179,15 +160,9 @@ export default function Home() {
             </p>
           </Text>
           <div class="flex my-3 text-xs">
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Game Dev
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Multiplayer
-            </h2>
-            <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
-              Unity
-            </h2>
+            <Tag>Game Dev</Tag>
+            <Tag>Multiplayer</Tag>
+            <Tag>Unity</Tag>
           </div>
         </details>
       </Box>
