@@ -6,7 +6,7 @@ import { Header } from "../components/Header.tsx";
 import { Text } from "../components/Text.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Box } from "../components/Box.tsx";
-import { Tag } from "../components/Tag.tsx";
+import { Tag, TagList } from "../components/Tag.tsx";
 
 export default function Home() {
   return (
@@ -89,14 +89,14 @@ export default function Home() {
               centralized machine.
             </p>
           </Text>
-          <div class="flex my-3 text-xs">
+          <TagList>
             <Tag>Augmented Reality</Tag>
             <Tag>Machine Learning</Tag>
             <Tag>Web Dev</Tag>
             <Tag>Unity</Tag>
             <Tag>Python</Tag>
             <Tag>Flask</Tag>
-          </div>
+          </TagList>
         </details>
         <hr class="h-0.5 my-3 bg-gray-300" />
         <details id="biztapp">
@@ -128,12 +128,12 @@ export default function Home() {
               in a team in a multicultural environment.
             </p>
           </Text>
-          <div class="flex my-3 text-xs">
+          <TagList>
             <Tag>Web Dev</Tag>
             <Tag>React</Tag>
             <Tag>Node.js</Tag>
             <Tag>ElasticSearch</Tag>
-          </div>
+          </TagList>
         </details>
         <hr class="h-0.5 my-3 bg-gray-300" />
         <details id="midnera">
@@ -159,11 +159,11 @@ export default function Home() {
               developed it in Unity.
             </p>
           </Text>
-          <div class="flex my-3 text-xs">
+          <TagList>
             <Tag>Game Dev</Tag>
             <Tag>Multiplayer</Tag>
             <Tag>Unity</Tag>
-          </div>
+          </TagList>
         </details>
       </Box>
       <Box>
