@@ -17,7 +17,7 @@ export default function Home() {
       <Box class="flex">
         <div class="mr-10">
           <img
-            src="/toucan.png"
+            src="/images/toucan.png"
             class="w-32 h-32 m-0 p-0 rounded-full"
             alt="tocano logo"
           />
