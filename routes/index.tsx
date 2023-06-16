@@ -3,6 +3,7 @@ import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-gi
 import BrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
 import ArrowDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
 import { Header } from "../components/Header.tsx";
+import { Footer } from "../components/Footer.tsx";
 
 export default function Home() {
   return (
@@ -251,9 +252,7 @@ export default function Home() {
           <li>Slovak (Basic)</li>
         </ul>
       </div>
-      <div class="h-24"></div>
-      <div class="fixed h-[10em] w-[100%] bottom-0 bg-gradient-to-t from-gray-100 to-gray-100/0 pointer-events-none">
-      </div>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
 
 class Gallery {
@@ -65,9 +66,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
           })}
         </div>
       </div>
-      <div class="h-24"></div>
-      <div class="fixed h-[10em] w-[100%] bottom-0 bg-gradient-to-t from-gray-100 to-gray-100/0 pointer-events-none">
-      </div>
+      <Footer />
     </>
   );
 }
