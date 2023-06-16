@@ -2,6 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
+import { Text } from "../components/Text.tsx";
 
 class Gallery {
   games: string[] = [];
@@ -35,15 +36,31 @@ export default function Home({ data }: PageProps<Gallery | null>) {
       </Head>
       <Header />
       <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+        <Text>
+          <p>
+            In my free time, I like to play videogames. Nowadays, I mostly play
+            roguelike games: One More Gate, Slay the Spire, and Tainted Grail. I
+            also still play the MOBA Heroes of the Storm and the ARPG Path of
+            Exile.
+          </p>
+          <p>
+            Although I don't play as frequently, I have also played many hours
+            of Divinity: Original Sin II
+          </p>
+          <p>
+            In my childhood, I used to play primarily MMO games like: Puzzle
+            Pirates, Dofus, DragonFable, AdventureQuest Worlds, and MechQuest.
+          </p>
+        </Text>
       </div>
       <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
         <h1 class="text-uppercase font-bold mb-2">Games</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
-        <div class="grid lg:grid-cols-4 lg:gap-3 grid-cols-2 gap-1">
+        <div class="grid lg:grid-cols-5 lg:gap-2 grid-cols-3 gap-1">
           {data?.games?.map((s) => {
             return (
               <img
-                src={["/games/", s].join("")}
+                src={"/games/" + s}
                 class="rounded-lg shadow"
                 alt={s}
               />
@@ -54,11 +71,11 @@ export default function Home({ data }: PageProps<Gallery | null>) {
       <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
         <h1 class="text-uppercase font-bold mb-2">Shows</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
-        <div class="grid lg:grid-cols-4 lg:gap-3 grid-cols-2 gap-1">
+        <div class="grid lg:grid-cols-5 lg:gap-2 grid-cols-3 gap-1">
           {data?.shows?.map((s) => {
             return (
               <img
-                src={["/shows/", s].join("")}
+                src={"/shows/" + s}
                 class="rounded-lg shadow"
                 alt={s}
               />

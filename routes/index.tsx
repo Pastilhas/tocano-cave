@@ -3,7 +3,9 @@ import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-gi
 import BrandLinkedin from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-linkedin.tsx";
 import ArrowDown from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
 import { Header } from "../components/Header.tsx";
+import { Text } from "../components/Text.tsx";
 import { Footer } from "../components/Footer.tsx";
+import { Box } from "../components/Box.tsx";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
         <title>Tocano</title>
       </Head>
       <Header />
-      <div class="p-8 mx-auto my-5 max-w-screen-md flex rounded-lg shadow bg-gray-100">
+      <Box class="flex">
         <div class="mr-10">
           <img
             src="/toucan.png"
@@ -35,23 +37,23 @@ export default function Home() {
         </div>
         <div>
           <h1 class="text-uppercase font-bold mb-2">Software Developer</h1>
-          <div class="mt-2">
+          <Text class="mt-2">
             <p>
               Hello, I am João Campos. I have studied Informatics Engineering
               and am currently working as a Software Developer. I have already
               had the opportunity to experience many different environments and
               develop skills I consider essential to a programmer.
             </p>
-            <p class="pt-3">
+            <p>
               In the future, I aspire to be a Product Manager, designing my own
               products to satisfy people's needs. For now, I will keep working
               as a developer to enhance my knowledge in the area and widen my
               range of skills.
             </p>
-          </div>
+          </Text>
         </div>
-      </div>
-      <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+      </Box>
+      <Box>
         <h1 class="text-uppercase font-bold mb-2">Experience</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <details id="inegi">
@@ -63,29 +65,29 @@ export default function Home() {
               <h2 class="font-bold">09.2021 – Now</h2>
             </div>
           </summary>
-          <div class="mt-5">
+          <Text class="mt-5">
             <p>
               I began my journey at INEGI during the development of my Master's
               thesis. The thesis involved the evaluation of the impact of the
               application of augmented reality in industrial processes,
               specifically used for monitoring.
             </p>
-            <p class="pt-3">
+            <p>
               After finishing my thesis, I continued working at INEGI. Not only
               did I continue the development of the AR application, I also
               started many different projects, for example:
             </p>
-            <p class="pt-3">
+            <p>
               - A chat bot platform which allows employees to ask questions
               related to the regulations of INEGI, making HR's work easier;
             </p>
-            <p class="pt-3">
+            <p>
               - A resource reservation platform, which allows employees to
               schedule the creation of a virtual machine in our server. These
               VM's may be used to execute machine learning projects in a
               centralized machine.
             </p>
-          </div>
+          </Text>
           <div class="flex my-3 text-xs">
             <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
               Augmented Reality
@@ -117,26 +119,26 @@ export default function Home() {
               <h2 class="font-bold">03.2022 – 09.2022</h2>
             </div>
           </summary>
-          <div class="mt-5">
+          <Text class="mt-5">
             <p>
               After my Erasmus experience, I was invited by a colleague to join
               a German startup, BizTapp, to help them develop an innovative web
               application.
             </p>
-            <p class="pt-3">
+            <p>
               The product consisted on a platform which matches employee with
               suitable projects and teams, depending on their current skills and
               career aspirations. I helped develop the backend for the website,
               mainly the access security and ElasticSearch database.
             </p>
-            <p class="pt-3">
+            <p>
               This project allowed me to develop my skills in web development
               using the microservice architecture and to learn how to build an
               ElasicSearch database. Furthermore, by working with foreign
               coworkers from different countries, I improved my ability to work
               in a team in a multicultural environment.
             </p>
-          </div>
+          </Text>
           <div class="flex my-3 text-xs">
             <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
               Web Dev
@@ -162,20 +164,20 @@ export default function Home() {
               <h2 class="font-bold">07.2019 – 08.2019</h2>
             </div>
           </summary>
-          <div class="mt-5">
+          <Text class="mt-5">
             <p>
               In my 2nd year of studies, I took part in an internship at Mindera
               Gaming, a Portuguese company which develops betting games. I
               always had a passion for games and wanted to try out the
               development of this kind of software in a comercial environment.
             </p>
-            <p class="pt-3">
+            <p>
               My team and I were given the task to design a game from scratch,
               having as the only restriction that it had to be a western battle
               royale. After much brainstorm, we reached a final idea and
               developed it in Unity.
             </p>
-          </div>
+          </Text>
           <div class="flex my-3 text-xs">
             <h2 class="p-1 font-bold mb-1 mr-3 bg-gray-600 rounded-lg text-gray-100">
               Game Dev
@@ -188,8 +190,8 @@ export default function Home() {
             </h2>
           </div>
         </details>
-      </div>
-      <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+      </Box>
+      <Box>
         <h1 class="text-uppercase font-bold mb-2">Education</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <ul class="ml-5 list-disc">
@@ -202,8 +204,8 @@ export default function Home() {
             <p class="font-italic font-light">Erasmus+ Programme</p>
           </li>
         </ul>
-      </div>
-      <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+      </Box>
+      <Box>
         <h1 class="text-uppercase font-bold mb-2">Skills</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <h2 class="font-bold mb-1">Programming Languages</h2>
@@ -251,7 +253,7 @@ export default function Home() {
           <li>Spanish (Basic)</li>
           <li>Slovak (Basic)</li>
         </ul>
-      </div>
+      </Box>
       <Footer />
     </>
   );
