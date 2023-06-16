@@ -22,15 +22,15 @@ export default function Home() {
           <h1 class="py-5 w-32 text-center text-uppercase font-bold">
             João Campos
           </h1>
-          <div class="flex">
-            <div class="h-5 w-5"></div>
-            <div class="h-5 w-5"></div>
+          <div class="flex justify-between">
+            <div></div>
             <a href="https://github.com/Pastilhas" target="_blank">
-              <BrandGithub class="h-5 w-5 mr-3" />
+              <BrandGithub class="aspect-square" />
             </a>
             <a href="https://www.linkedin.com/in/joaopcampos0/" target="_blank">
-              <BrandLinkedin class="h-5 w-5 mr-3" />
+              <BrandLinkedin class="aspect-square" />
             </a>
+            <div></div>
           </div>
         </div>
         <div>
@@ -57,9 +57,9 @@ export default function Home() {
         <details id="inegi">
           <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
-            <div class="grid grid-cols-3 gap-10">
-              <h2 class="font-bold">INEGI</h2>
-              <h2 class="font-bold">Software Developer</h2>
+            <div class="flex">
+              <h2 class="font-bold w-[10em]">INEGI</h2>
+              <h2 class="font-bold w-[20em]">Software Developer</h2>
               <h2 class="font-bold">09.2021 – Now</h2>
             </div>
           </summary>
@@ -111,9 +111,9 @@ export default function Home() {
         <details id="biztapp">
           <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
-            <div class="grid grid-cols-3 gap-10">
-              <h2 class="font-bold">BizTapp Gmbh.</h2>
-              <h2 class="font-bold">Software Developer</h2>
+            <div class="flex">
+              <h2 class="font-bold w-[10em]">BizTapp Gmbh.</h2>
+              <h2 class="font-bold w-[20em]">Software Developer</h2>
               <h2 class="font-bold">03.2022 – 09.2022</h2>
             </div>
           </summary>
@@ -154,12 +154,12 @@ export default function Home() {
         </details>
         <hr class="h-0.5 my-3 bg-gray-300" />
         <details id="midnera">
-        <summary class="flex items-center">
+          <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
-            <div class="grid grid-cols-3 gap-10">
-              <h2 class="font-bold">Mindera Gaming</h2>
-              <h2 class="font-bold ml-0.5">Game Developer</h2>
-              <h2 class="font-bold ml-2">07.2019 – 08.2019</h2>
+            <div class="flex">
+              <h2 class="font-bold w-[10em]">Mindera Gaming</h2>
+              <h2 class="font-bold w-[20em]">Game Developer</h2>
+              <h2 class="font-bold">07.2019 – 08.2019</h2>
             </div>
           </summary>
           <div class="mt-5">
