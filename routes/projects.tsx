@@ -6,7 +6,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tocano - Projects</title>
+        <title>Tocano Cave - Projects</title>
+        <link rel="icon" href="/favicon.ico?v=2" />
       </Head>
       <Header />
       <div class="h-[1000em]"></div>

@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { Box } from "../components/Box.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
 import { TextBox } from "../components/TextBox.tsx";
@@ -32,10 +33,11 @@ export default function Home({ data }: PageProps<Gallery | null>) {
   return (
     <>
       <Head>
-        <title>Tocano - Personal</title>
+        <title>Tocano Cave - Personal</title>
+        <link rel="icon" href="/favicon.ico?v=2" />
       </Head>
       <Header />
-      <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+      <Box>
         <h1 class="text-uppercase font-bold mb-2">Games</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <TextBox class="mb-5">
@@ -63,10 +65,16 @@ export default function Home({ data }: PageProps<Gallery | null>) {
             );
           })}
         </div>
-      </div>
-      <div class="p-10 mx-auto my-5 max-w-screen-md rounded-lg shadow bg-gray-100">
+      </Box>
+      <Box>
         <h1 class="text-uppercase font-bold mb-2">Shows</h1>
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <TextBox class="mb-5">
+          <p>
+            When I am too tired to play games, I entertain myself with movies
+            and series. Here are some favourites.
+          </p>
+        </TextBox>
         <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
           {data?.shows?.map((s) => {
             return (
@@ -78,7 +86,27 @@ export default function Home({ data }: PageProps<Gallery | null>) {
             );
           })}
         </div>
-      </div>
+      </Box>
+      <Box>
+        <h1 class="text-uppercase font-bold mb-2">Books</h1>
+        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <TextBox class="mb-5">
+          <p>
+            I also read. I am into crime mystery and space western stories.
+          </p>
+        </TextBox>
+        <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
+          {data?.shows?.map((s) => {
+            return (
+              <img
+                src={"/images/shows/" + s}
+                class="rounded-lg shadow"
+                alt={s}
+              />
+            );
+          })}
+        </div>
+      </Box>
       <Footer />
     </>
   );

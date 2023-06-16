@@ -12,7 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tocano</title>
+        <title>Tocano Cave</title>
+        <link rel="icon" href="/favicon.ico?v=2" />
       </Head>
       <Header />
       <Box class="flex">
