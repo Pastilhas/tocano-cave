@@ -8,6 +8,7 @@ import { TextBox } from "../components/TextBox.tsx";
 class Gallery {
   games: string[] = [];
   shows: string[] = [];
+  books: string[] = [];
 }
 
 export const handler: Handlers<Gallery | null> = {
@@ -22,6 +23,12 @@ export const handler: Handlers<Gallery | null> = {
     for await (const dirEntry of Deno.readDir("static/images/shows")) {
       if (dirEntry.isFile) {
         gallery.shows.push(dirEntry.name);
+      }
+    }
+
+    for await (const dirEntry of Deno.readDir("static/images/books")) {
+      if (dirEntry.isFile) {
+        gallery.books.push(dirEntry.name);
       }
     }
 
@@ -48,10 +55,23 @@ export default function Home({ data }: PageProps<Gallery | null>) {
             Exile.
           </p>
           <p>
-            Although I don't play as frequently, I have also played many hours
-            of Divinity: Original Sin II. In my childhood, I used to play
-            primarily MMO games like: Puzzle Pirates, Dofus, DragonFable,
-            AdventureQuest Worlds, and MechQuest.
+            Although I don't play as frequently now, I have also played many
+            hours (more than I'd like to share) of Minecraft and Divinity:
+            Original Sin II. I also played Roblox since forever. However, it is
+            a platform, not an individual game.
+          </p>
+          <p>
+            In my childhood, I used to play primarily MMO games like: Puzzle
+            Pirates, Dofus, DragonFable, AdventureQuest Worlds, and MechQuest.
+          </p>
+          <p>
+            I also recommend some other games that I have played. Despite having
+            consumed less hours, they marked me in their quality of
+            implementation: Deadbolt, Slowdive, Long Gone Days, Stick RPG (1 and
+            2), Little Inferno, Paladin Traducer, Monster Sanctuary, ...
+          </p>
+          <p>
+            (list to extend as I remember them)
           </p>
         </TextBox>
         <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
@@ -71,8 +91,12 @@ export default function Home({ data }: PageProps<Gallery | null>) {
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <TextBox class="mb-5">
           <p>
-            When I am too tired to play games, I entertain myself with movies
-            and series. Here are some favourites.
+            Tired from the day,<br />Shows and movies bring
+            relief,<br />Relaxation found.
+          </p>
+          <p>
+            Here is a list of series and movies which I have watched more
+            recently and/or impacted me most.
           </p>
         </TextBox>
         <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
@@ -92,14 +116,29 @@ export default function Home({ data }: PageProps<Gallery | null>) {
         <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
         <TextBox class="mb-5">
           <p>
-            I also read. I am into crime mystery and space western stories.
+            Crime mysteries and space westerns. Those are my favourite genres
+            of literary works.
+          </p>
+          <p>
+            Crime mysteries put you at the edge of your seat (or bed),
+            theorycrafting and solving cases together with the characters. It
+            engages you in a hunt for more information and, ultimately, closure.
+            Although, some mysteries ought to remain unsolved...
+          </p>
+          <p>
+            Similarly, space westerns sow in me the seeds of exploration. They
+            ignite the human nature of exponential and unstoppable desire to
+            explore the frozen unknown and control the deserted islands beyond.
+            The solo hero, maybe accompanied by a small team, ventures into
+            danger, looking for something they do not have, and, more often than
+            not, will never obtain.
           </p>
         </TextBox>
         <div class="grid md:grid-cols-5 md:gap-2 grid-cols-3 gap-1">
-          {data?.shows?.map((s) => {
+          {data?.books?.map((s) => {
             return (
               <img
-                src={"/images/shows/" + s}
+                src={"/images/books/" + s}
                 class="rounded-lg shadow"
                 alt={s}
               />
