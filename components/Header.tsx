@@ -19,7 +19,7 @@ export function Header() {
   return (
     <>
       <div class="p-3 mx-auto my-10 max-w-screen-md rounded-lg shadow bg-gray-100">
-        <div class="flex space-x-5 font-bold">
+        <div class="flex space-x-5 font-bold text-uppercase">
           <HeaderLink href="/">Home</HeaderLink>
           <HeaderLink href="/personal">Personal</HeaderLink>
           <HeaderLink href="/projects">Projects</HeaderLink>
