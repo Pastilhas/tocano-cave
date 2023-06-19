@@ -7,6 +7,8 @@ import { TextBox } from "../components/TextBox.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Box } from "../components/Box.tsx";
 import { Tag, TagList } from "../components/Tag.tsx";
+import { H1 } from "../components/H1.tsx";
+import { H2 } from "../components/H2.tsx";
 
 export default function Home() {
   return (
@@ -23,9 +25,9 @@ export default function Home() {
             class="w-32 h-32 rounded-full"
             alt="tocano logo"
           />
-          <h1 class="py-5 w-32 text-center text-uppercase font-bold">
+          <H1 class="py-5 w-32 text-center">
             João Campos
-          </h1>
+          </H1>
           <div class="flex justify-between">
             <div></div>
             <a href="https://github.com/Pastilhas" target="_blank">
@@ -38,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <h1 class="text-uppercase font-bold mb-2">Software Developer</h1>
+          <H1>Software Developer</H1>
           <TextBox class="mt-2">
             <p>
               Hello, I am João Campos. I have studied Informatics Engineering
@@ -56,15 +58,14 @@ export default function Home() {
         </div>
       </Box>
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Experience</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <H1>Experience</H1>
         <details id="inegi">
           <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
             <div class="flex">
-              <h2 class="font-bold w-[10em]">INEGI</h2>
-              <h2 class="font-bold w-[20em]">Software Developer</h2>
-              <h2 class="font-bold">09.2021 – Now</h2>
+              <H2 class="w-[10em]">INEGI</H2>
+              <H2 class="w-[20em]">Software Developer</H2>
+              <H2>09.2021 – Now</H2>
             </div>
           </summary>
           <TextBox class="mt-5">
@@ -104,9 +105,9 @@ export default function Home() {
           <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
             <div class="flex">
-              <h2 class="font-bold w-[10em]">BizTapp Gmbh.</h2>
-              <h2 class="font-bold w-[20em]">Software Developer</h2>
-              <h2 class="font-bold">03.2022 – 09.2022</h2>
+              <H2 class="w-[10em]">BizTapp Gmbh.</H2>
+              <H2 class="w-[20em]">Software Developer</H2>
+              <H2>03.2022 – 09.2022</H2>
             </div>
           </summary>
           <TextBox class="mt-5">
@@ -141,9 +142,9 @@ export default function Home() {
           <summary class="flex items-center">
             <ArrowDown class="h-5 w-5 mr-5" />
             <div class="flex">
-              <h2 class="font-bold w-[10em]">Mindera Gaming</h2>
-              <h2 class="font-bold w-[20em]">Game Developer</h2>
-              <h2 class="font-bold">07.2019 – 08.2019</h2>
+              <H2 class="w-[10em]">Mindera Gaming</H2>
+              <H2 class="w-[20em]">Game Developer</H2>
+              <H2>07.2019 – 08.2019</H2>
             </div>
           </summary>
           <TextBox class="mt-5">
@@ -168,23 +169,21 @@ export default function Home() {
         </details>
       </Box>
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Education</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <H1>Education</H1>
         <ul class="ml-5 list-disc">
           <li class="mb-3">
             Faculty of Engineering, University of Porto
             <p class="font-italic font-light">Master's degree</p>
           </li>
-          <li class="">
+          <li>
             Faculty of Management Science and Informatics, University of Zilina
             <p class="font-italic font-light">Erasmus+ Programme</p>
           </li>
         </ul>
       </Box>
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Skills</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
-        <h2 class="font-bold mb-1">Programming Languages</h2>
+        <H1>Skills</H1>
+        <H2 class="mb-2">Programming Languages</H2>
         <ul class="ml-5 list-square grid grid-cols-4">
           <li>C#</li>
           <li>Java</li>
@@ -198,7 +197,7 @@ export default function Home() {
           <li>SQL</li>
           <li>NoSQL</li>
         </ul>
-        <h2 class="font-bold mb-1 mt-8">Libraries & Frameworks</h2>
+        <H2 class="mb-2 mt-8">Libraries & Frameworks</H2>
         <ul class="ml-5 list-square grid grid-cols-4">
           <li>Unity</li>
           <li>Node.js</li>
@@ -212,7 +211,7 @@ export default function Home() {
           <li>Deno</li>
           <li>Laravel</li>
         </ul>
-        <h2 class="font-bold mb-1 mt-8">Programming tools</h2>
+        <H2 class="mb-2 mt-8">Programming tools</H2>
         <ul class="ml-5 list-square grid grid-cols-4">
           <li>Docker</li>
           <li>Linux</li>
@@ -222,7 +221,7 @@ export default function Home() {
           <li>Visual Studio</li>
           <li>IntelliJ</li>
         </ul>
-        <h2 class="font-bold mb-1 mt-8">Speaking languages</h2>
+        <H2 class="mb-2 mt-8">Speaking languages</H2>
         <ul class="ml-5 list-square">
           <li>Portuguese (Native)</li>
           <li>English (Professional)</li>

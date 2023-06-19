@@ -19,9 +19,9 @@ export default function Home() {
           alt="Ginger Soul"
         />
         <div>
-          <h1 class="text-uppercase font-bold mb-2">Ginger Soul</h1>
-          <h1 class="text-uppercase font-thin mb-2">Game</h1>
-          <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+          <h1 class="text-uppercase font-bold">Ginger Soul</h1>
+          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+
           <TextBox>
             <p>
               After your death, your soul was shattered into eight shards and
@@ -45,9 +45,9 @@ export default function Home() {
           alt="Tocano Cave"
         />
         <div>
-          <h1 class="text-uppercase font-bold mb-2">Tocano Cave</h1>
-          <h1 class="text-uppercase font-thin mb-2">Website</h1>
-          <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+          <h1 class="text-uppercase font-bold">Tocano Cave</h1>
+          <h1 class="text-uppercase font-thin mb-9">Website</h1>
+
           <TextBox>
             <p>
               My personal website, for sharing my professional career, personal
@@ -65,21 +65,49 @@ export default function Home() {
       </Box>
       <Box class="flex gap-5">
         <img
-          src="/images/projects/tocano_cave.png"
+          src="/images/projects/naval_sim.png"
           class="rounded-lg shadow"
           alt="Naval Sim"
         />
         <div>
-          <h1 class="text-uppercase font-bold mb-2">Naval Sim</h1>
-          <h1 class="text-uppercase font-thin mb-2">Game</h1>
-          <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+          <h1 class="text-uppercase font-bold">Naval Sim</h1>
+          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+
           <TextBox>
             <p>
               Due to the lack of resources for control of aquatic vehicles in
               DnD 5e, I decided to create a simple simulator which allows groups
               to visualize in an interactive way their sea adventures.
             </p>
+          </TextBox>
+        </div>
+      </Box>
+      <Box class="flex gap-5">
+        <img
+          src="/images/projects/smithing.png"
+          class="rounded-lg shadow"
+          alt="Smithing"
+        />
+        <div>
+          <h1 class="text-uppercase font-bold">Smithing</h1>
+          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+
+          <TextBox>
             <p>
+              Inspired on the Puzzle Pirates minigame Blacksmithing, I made my
+              own version as a full game with multiple difficulty levels and a
+              story.
+            </p>
+            <p>
+              Unfortunately, the development version was lost in my old computer
+              and only an early version remains, available at{" "}
+              <a
+                href="https://gamejolt.com/games/smithing/394594"
+                target="_blank"
+                class="underline text-[#4a8db7]"
+              >
+                GameJolt
+              </a>
             </p>
           </TextBox>
         </div>
