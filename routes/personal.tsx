@@ -2,6 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Box } from "../components/Box.tsx";
 import { Footer } from "../components/Footer.tsx";
+import { H1 } from "../components/H1.tsx";
 import { Header } from "../components/Header.tsx";
 import { TextBox } from "../components/TextBox.tsx";
 
@@ -45,8 +46,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
       </Head>
       <Header />
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Games</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <H1>Games</H1>
         <TextBox class="mb-5">
           <p>
             In my free time, I like to play videogames. Nowadays, I mostly play
@@ -87,8 +87,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
         </div>
       </Box>
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Shows</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <H1>Shows</H1>
         <TextBox class="mb-5">
           <p>
             Tired from the day,<br />Shows and movies bring
@@ -112,8 +111,7 @@ export default function Home({ data }: PageProps<Gallery | null>) {
         </div>
       </Box>
       <Box>
-        <h1 class="text-uppercase font-bold mb-2">Books</h1>
-        <hr class="h-0.5 w-[6em] mb-3 bg-gray-300" />
+        <H1>Books</H1>
         <TextBox class="mb-5">
           <p>
             Crime mysteries and space westerns. Those are my favourite genres

@@ -3,6 +3,7 @@ import { Header } from "../components/Header.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Box } from "../components/Box.tsx";
 import { TextBox } from "../components/TextBox.tsx";
+import { H1 } from "../components/H1.tsx";
 
 export default function Home() {
   return (
@@ -19,8 +20,10 @@ export default function Home() {
           alt="Ginger Soul"
         />
         <div>
-          <h1 class="text-uppercase font-bold">Ginger Soul</h1>
-          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+          <div class="flex space-x-5 justify-between">
+            <H1>Ginger Soul</H1>
+            <H1 class="font-thin">Game</H1>
+          </div>
 
           <TextBox>
             <p>
@@ -45,8 +48,10 @@ export default function Home() {
           alt="Tocano Cave"
         />
         <div>
-          <h1 class="text-uppercase font-bold">Tocano Cave</h1>
-          <h1 class="text-uppercase font-thin mb-9">Website</h1>
+          <div class="flex space-x-5 justify-between">
+            <H1>Tocano Cave</H1>
+            <H1 class="font-thin">Website</H1>
+          </div>
 
           <TextBox>
             <p>
@@ -70,8 +75,10 @@ export default function Home() {
           alt="Naval Sim"
         />
         <div>
-          <h1 class="text-uppercase font-bold">Naval Sim</h1>
-          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+          <div class="flex space-x-5 justify-between">
+            <H1>Naval Sim</H1>
+            <H1 class="font-thin">Game</H1>
+          </div>
 
           <TextBox>
             <p>
@@ -89,8 +96,10 @@ export default function Home() {
           alt="Smithing"
         />
         <div>
-          <h1 class="text-uppercase font-bold">Smithing</h1>
-          <h1 class="text-uppercase font-thin mb-9">Game</h1>
+          <div class="flex space-x-5 justify-between">
+            <H1>Smithing</H1>
+            <H1 class="font-thin">Game</H1>
+          </div>
 
           <TextBox>
             <p>
